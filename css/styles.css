@@ -10,11 +10,12 @@
 
 
 #nav-bar {
+    position: fixed;
     width: 100%;
     height: 200px;
     display: flex;
     justify-content: space-between;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     margin: 0 auto;
     max-width: 1000px;
 
@@ -27,7 +28,7 @@
 .logo {
     width: 200px;
     height: 100%;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     min-width: 200px;
     padding: 5px;
 }
@@ -56,13 +57,78 @@
     padding: 8px;
     border-radius: 5px;
     font-size: 1.5rem;
-    font-weight: 900;
+    font-weight: 600;
 }
 
 .nav-link a:hover {
     background: linear-gradient(#ff66c4, black 100%);
-
     color: black;
-    font-weight: 900;
+}
 
+main {
+    position: relative;
+    top: 200px;
+}
+
+#form {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    color: lightgrey;
+    height: 150px;
+    /* border: 2px solid white; */
+    margin-bottom: 30px;
+    /* gap: 30px; */
+}
+
+#form h2 {
+    font-weight: 600;
+    background: linear-gradient(to right,#ff66c4, lightgrey, #ff66c4);
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 10s linear infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0%;
+	}
+	
+	100% {
+		background-position: 400%;
+	}
+}
+
+
+#form input {
+    color: lightgrey;
+    height: 40px;
+    width: 300px;
+    padding: .7rem .6rem;
+    font-size: 1.2rem;
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+}
+
+#form #submit {
+    width: 150px;
+    background: lightgrey;
+    color: black;
+    padding-bottom: 10px;
+    border: none;
+}
+
+
+
+#vid-container {
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid lightgrey; */
+
+}
+
+@media (max-width: 600px;) {
+    
 }
