@@ -5,7 +5,6 @@
     background-color: black;
     /* border: 2px solid white; */
     scroll-behavior: smooth;
-    scroll-padding-top: 200px;
 }
 
 body {
@@ -15,7 +14,25 @@ body {
     right: 0;
     bottom: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    overflow: hidden;
     overflow-y: scroll;
+}
+
+main {
+    position: fixed;
+    top: 200px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex; 
+    margin: 0 auto;
+    flex-direction: column;
+    max-width: 1000px;
+    overflow-y: scroll;
+}
+
+#sec1 {
+    scroll-: 400px;
 }
 
 header {
@@ -78,19 +95,6 @@ header {
     color: black;
 }
 
-main {
-    /* position: absolute;
-    top: 200px;
-    left: 0;
-    right: 0;
-    bottom: 0; */
-    display: flex; 
-    margin: 0 auto;
-    flex-direction: column;
-    max-width: 1000px;
-    overflow-y: scroll;
-}
-
 #form {
     display: flex;
     justify-content: space-evenly;
@@ -130,6 +134,10 @@ main {
     font-size: 1.2rem;
     border: 2px solid lightgrey;
     border-radius: 5px;
+}
+
+input:focus {
+    outline-color: rgba(242, 217, 184, .9);
 }
 
 #form #submit {
@@ -266,7 +274,7 @@ footer {
 }
 
 footer p {
-    padding-right: 10px;
+    padding: 0 10px 10px 0;
 }
 
 @media (max-width: 600px) {
