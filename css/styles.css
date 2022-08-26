@@ -5,6 +5,7 @@
     background-color: black;
     /* border: 2px solid white; */
     scroll-behavior: smooth;
+   
 }
 
 body {
@@ -14,8 +15,6 @@ body {
     right: 0;
     bottom: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-    overflow: hidden;
-    overflow-y: scroll;
 }
 
 main {
@@ -28,8 +27,16 @@ main {
     margin: 0 auto;
     flex-direction: column;
     max-width: 1000px;
-    overflow-y: scroll;
+    overflow: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
+
+main::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */ 
+}
+
+
 
 #sec1 {
     scroll-: 400px;
